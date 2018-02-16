@@ -34,11 +34,13 @@ function sortByAge (deploys) {
 
 function nowApi () {
   const authToken = process.env.NOW_TOKEN
+  const teamId = process.env.NOW_TEAMID
+
   if (!authToken) {
     console.log('WARNING: Cannot find NOW_TOKEN environment variable')
   }
 
-  const now = Now(authToken)
+  const now = new Now(authToken, teamId)
 
   function wait (seconds) {
     return new Promise((resolve, reject) => {

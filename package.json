@@ -1,5 +1,5 @@
 {
-  "name": "now-pipeline",
+  "name": "@botmatic/now-pipeline",
   "version": "0.0.0-semantic-release",
   "description": "Single CI command to deploy new version to Zeit Now, including e2e tests and alias switch",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
@@ -91,7 +91,7 @@
     "minimist": "1.2.0",
     "moment": "2.20.1",
     "node-sentry-error-reporter": "1.8.0",
-    "now-client": "0.7.0",
+    "now-client": "1.1.6",
     "pkgd": "1.1.2",
     "ramda": "0.25.0"
   },
