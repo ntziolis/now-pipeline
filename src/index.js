@@ -40,6 +40,8 @@ function nowApi () {
     console.log('WARNING: Cannot find NOW_TOKEN environment variable')
   }
 
+  console.log('teamId USED : ' + teamId)
+
   const now = new Now(authToken, teamId)
 
   function wait (seconds) {
