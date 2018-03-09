@@ -34,7 +34,7 @@ the cloud without breaking anything.
 ## Install and use
 
 ```sh
-npm i -g now-pipeline
+npm i -g @botmatic/now-pipeline
 ```
 
 Set `NOW_TOKEN` CI environment variable with a token that you can get from
