@@ -176,9 +176,9 @@ function nowApi () {
             console.error(r.message)
             return Promise.reject(r)
           }
-          console.error('error')
-          console.error(r.response.data)
-          return Promise.reject(new Error(r.response.data.err.message))
+          // console.error('error')
+          // console.error(r)
+          return Promise.reject(new Error(r))
         })
     }
   }
