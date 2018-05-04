@@ -177,7 +177,6 @@ function testDeploy (deploy) {
 
 start
   .then(setFullHost)
-  .then(testDeploy)
   .then(R.tap(deployIsWorking))
   .then(updateAliasIfNecessary(argv.alias))
   .catch(err => {
